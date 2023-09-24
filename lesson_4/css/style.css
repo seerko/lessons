@@ -1,0 +1,62 @@
+@import url(reset.css);
+
+* {
+  color: darkblue;
+}
+
+li {
+  color: green;
+}
+
+.title {
+  color: red;
+}
+
+[class*="sub"] {
+  color: chocolate;
+}
+
+#long-day {
+  color: violet;
+}
+
+.footer a,
+.sleep__text p {
+  color: grey;
+}
+
+.time.tracking {
+  color: deeppink;
+}
+
+.zone__text p {
+  color: chartreuse;
+}
+
+p.time {
+  color: bisque;
+}
+
+.text .track {
+  color: cornflowerblue;
+}
+
+.distractions__text * {
+  color: cyan;
+}
+
+.multitasking__text > p {
+  color: darkgreen;
+}
+
+.inspiration__item ~ p {
+  color: darkorange;
+}
+
+.inspiration__item + p {
+  color: gold;
+}
+
+.link {
+  color: blue !important;
+}
