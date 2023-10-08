@@ -1,0 +1,118 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+body {
+  font-family: "Blogger Sans", sans-serif;
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.5;
+}
+
+.title,
+.subtitle {
+  font-weight: 700;
+  text-align: center;
+  word-spacing: 5px;
+}
+
+.title {
+  font-size: 36px;
+  color: #069e9e;
+  text-shadow: 5px 10px 10px #16d33f, 2px 2px 2px #800f00;
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 5px;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #d45b3d;
+  text-shadow: -5px 10px 10px #053610, 2px 2px 2px #020080;
+  text-transform: capitalize;
+  line-height: 1.7;
+  letter-spacing: 3px;
+}
+
+.header-text {
+  font-style: italic;
+  color: #eb8a0c;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: lowercase;
+}
+
+.section-logo {
+  text-align: center;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.right-text {
+  text-align: right;
+}
+
+.line-through-text {
+  text-decoration: line-through;
+}
+
+.overline-text {
+  text-decoration: overline;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+.olimpic {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: #0000ff;
+  text-shadow: 30px 0px 1px #000000, 60px 0px 1px #ff0000, 15px 15px 1px #ffff00,
+    45px 15px 1px #00ff00;
+}
+
+.section-text {
+  text-indent: 30px;
+}
+
+.nowrap-text {
+  white-space: nowrap;
+}
+
+/* Макет */
+
+.block-title {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.27;
+}
+
+.title-thin {
+  font-weight: 600;
+}
+
+.block-text {
+  color: #7d7d7d;
+  font-family: "Inter", sans-serif;
+  line-height: 1.46;
+}
+
+.block-subtitle {
+  color: #6b77e5;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+}
+
+.block-list {
+  color: #7d7d7d;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  line-height: 1.46;
+}
