@@ -399,3 +399,20 @@ body {
 .outline a:focus {
   outline: 2px dotted #d41010;
 }
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 5px;
+}
+
+.footer-link {
+  font-size: 24px;
+  color: #d45b3d;
+  text-shadow: -5px 10px 10px #053610, 2px 2px 2px #020080;
+}
