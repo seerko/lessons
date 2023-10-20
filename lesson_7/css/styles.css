@@ -297,6 +297,9 @@ body {
 .jewellery-create-images .image-small img {
   margin-top: 14px;
   margin-left: -10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 235px;
 }
 
 .jewellery-create-images .image-big-block {
@@ -314,6 +317,9 @@ body {
 .jewellery-create-images .image-big img {
   margin-top: 19px;
   margin-left: -11px;
+  width: 100%;
+  height: 100%;
+  border-radius: 235px;
 }
 
 /* Практика */
