@@ -1,0 +1,441 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+body {
+  font-size: 18px;
+}
+
+.header {
+  margin-bottom: 100px;
+}
+
+.header-container,
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-title {
+  font-size: 36px;
+  color: #069e9e;
+  text-shadow: 4px 4px 2px #800f00, 5px 10px 10px #16d33f;
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 5px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #800f00;
+  text-shadow: 4px 4px 2px #069e9e, 5px 10px 10px #16d33f;
+  letter-spacing: 3px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 5px;
+}
+
+.footer-link {
+  font-size: 24px;
+  color: #d45b3d;
+  text-shadow: -5px 10px 10px #053610, 2px 2px 2px #020080;
+}
+
+/* Практика */
+
+.practice {
+  margin-bottom: 145px;
+}
+
+.block {
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.block p {
+  margin-bottom: 15px;
+  padding: 100px;
+}
+
+.background {
+  background-color: #98b3c9;
+}
+
+.color .green {
+  background-color: green;
+}
+
+.color .transparent {
+  background-color: transparent;
+}
+
+.color .blue {
+  background-color: #04046d;
+}
+
+.background.image {
+  background-image: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+.image .url {
+  background-image: url("../img/bg-1.jpg");
+}
+
+.image .no-repeat {
+  background: url("../img/bg-1.jpg") center no-repeat,
+    url("../img/bg-1.jpg") left top no-repeat,
+    url("../img/bg-1.jpg") 100% 100% no-repeat,
+    url("../img/bg-1.jpg") 250px 100px no-repeat,
+    url("../img/bg-1.jpg") 75% 50px no-repeat;
+}
+
+.image .repeat-x {
+  background: url("../img/bg-1.jpg") center repeat-x;
+}
+
+.image .repeat-y {
+  background: url("../img/bg-1.jpg") center repeat-y,
+    url("../img/bg-1.jpg") right repeat-y, url("../img/bg-1.jpg") left repeat-y;
+}
+
+.big-image .scroll {
+  background: url("../img/bg-2.jpg") center no-repeat;
+  background-attachment: scroll;
+}
+
+.big-image .fixed {
+  background: url("../img/bg-2.jpg") center no-repeat;
+  background-attachment: fixed;
+}
+
+.big-image .size-1 {
+  background: url("../img/bg-2.jpg") center no-repeat;
+  background-size: 50%;
+}
+
+.big-image .size-2 {
+  background: url("../img/bg-2.jpg") center no-repeat;
+  background-size: 400px 175px;
+}
+
+.big-image .size-3 {
+  background: url("../img/bg-2.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.big-image .size-4 {
+  background: url("../img/bg-2.jpg") center no-repeat;
+  background-size: cover;
+}
+
+/* Макет 1 */
+.consulting {
+  font-family: "Inter", sans-serif;
+  color: #7d7d7d;
+}
+
+.consulting-welcome {
+  max-width: 703px;
+  margin: 0 auto 145px;
+  padding: 0 15px;
+}
+
+.consulting-subtitle {
+  color: #37393f;
+  font-weight: 500;
+  line-height: 1.22; /* 22/18 */
+  margin-bottom: 16px;
+  padding-left: 18px;
+  text-transform: capitalize;
+  background: url("../img/box.jpg") 0 5px / 12px 12px no-repeat;
+}
+
+.consulting-title {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.consulting-title-fixed {
+  max-width: 415px;
+}
+
+.consulting-text p {
+  margin-bottom: 15px;
+}
+
+.consulting-text {
+  line-height: 1.46;
+  margin-bottom: 20px;
+}
+
+.consulting-list {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin-bottom: 43px;
+  line-height: 1.65; /* 33/20 */
+}
+
+.consulting-list li {
+  padding-left: 35px;
+  background: url(../img/li-icon.jpg) 0 3px no-repeat;
+  min-height: 33px;
+  margin-bottom: 23px;
+}
+
+.consulting-block {
+  margin-bottom: 37px;
+  font-size: 0;
+}
+
+.consulting-block-left,
+.consulting-block-right {
+  max-width: 295px;
+  border: 1px solid #e3e3e3;
+  display: inline-block;
+  vertical-align: top;
+  padding: 32px 32px 32px 90px;
+  margin-right: 21px;
+}
+
+.consulting-block-left {
+  background: url(../img/icon-1.png) 32px 32px / 42px 42px no-repeat;
+}
+
+.consulting-block-right {
+  background: url(../img/icon-2.png) 32px 32px / 42px 42px no-repeat;
+}
+
+.consulting-block-label {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.consulting-block-text {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.consulting-button {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 20px 27px;
+  background: #6b77e5;
+}
+
+.consulting-projects {
+  max-width: 1250px;
+  margin: 0 auto 150px;
+  padding: 0 15px;
+}
+
+.consulting-projects-header {
+  margin: 0 auto;
+  max-width: 850px;
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+.consulting-subtitle-fixed {
+  display: inline-block;
+}
+
+.projects-row {
+  margin-bottom: 58px;
+  font-size: 0;
+}
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 384px;
+  text-align: left;
+  margin-right: 34px;
+  font-size: 18px;
+}
+
+.card-last {
+  margin-right: 0;
+}
+
+.card-img {
+  height: 501px;
+  margin-bottom: 24px;
+}
+
+.card-title {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 10px;
+}
+
+.card-data {
+  font-size: 14px;
+  line-height: 1.57; /* 22/14 */
+  padding-left: 25px;
+  background: url(../img/cal-icon.png) 0 0 no-repeat;
+}
+
+.card-img.img-1 {
+  background: url(../img/project-1.jpg) center / cover no-repeat;
+}
+
+.card-img.img-2 {
+  background: url(../img/project-2.jpg) center / cover no-repeat;
+}
+
+.card-img.img-3 {
+  background: url(../img/project-3.jpg) center / cover no-repeat;
+}
+
+.card-img.img-4 {
+  background: url(../img/project-4.jpg) center / cover no-repeat;
+}
+
+.card-img.img-5 {
+  background: url(../img/project-5.jpg) center / cover no-repeat;
+}
+
+.card-img.img-6 {
+  background: url(../img/project-6.jpg) center / cover no-repeat;
+}
+
+/* Макет 2 */
+.euphoria {
+  font-family: "Causten", sans-serif;
+  color: #807d7e;
+  font-size: 20px;
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.india {
+  margin-bottom: 100px;
+}
+
+.india-title-block {
+  padding: 0 20px;
+  background: url(../img/line.jpg) 0 3px no-repeat;
+  margin-bottom: 30px;
+}
+
+.india-title {
+  font-size: 28px;
+  color: #3c4242;
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.56px;
+}
+
+.india-text {
+  padding-left: 21px;
+  margin-bottom: 25px;
+  line-height: 1.675;
+  letter-spacing: 0.4px;
+}
+
+.india-text h3 {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.india-text p {
+  margin-bottom: 20px;
+}
+
+.india-text span {
+  font-weight: 700;
+}
+
+.india-text .link {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 600;
+}
+
+.fashion {
+  font-size: 0;
+  margin-bottom: 100px;
+}
+
+.fashion-left {
+  display: inline-block;
+  width: 50%;
+  min-height: 640px;
+  background: url(../img/fashion-left.jpg) center / cover no-repeat;
+  border-radius: 10px 0 0 10px;
+  padding: 183px 74px 175px;
+  vertical-align: middle;
+}
+
+.fashion-right {
+  display: inline-block;
+  width: 50%;
+  min-height: 640px;
+  background: url(../img/fashion-right.jpg) center / cover no-repeat;
+  border-radius: 0 10px 10px 0;
+  vertical-align: middle;
+}
+
+.fashion-title {
+  color: #fff;
+  font-family: "Core Sans C", sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.47;
+  letter-spacing: 0.208px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.fashion-text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+
+.fashion-button {
+  display: inline-block;
+  color: #3c4242;
+  background-color: #fff;
+  padding: 12px 44px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  line-height: 1;
+}
