@@ -39,8 +39,8 @@
 
 @font-face {
   font-family: "Causten";
-  src: url("../fonts/causten-Light.woff2") format("woff2"),
-    url("../fonts/causten-Light.woff") format("woff");
+  src: url("../fonts/Causten-Light.woff2") format("woff2"),
+    url("../fonts/Causten-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
