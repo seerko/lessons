@@ -365,6 +365,10 @@ body {
   margin-bottom: 42px;
 }
 
+.management *:last-child {
+  margin-bottom: 0;
+}
+
 .management-subtitle + .management-text {
   margin-bottom: 40px;
 }
