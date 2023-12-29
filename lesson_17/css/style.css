@@ -1,0 +1,584 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+body {
+  color: #000;
+  font-family: "Causten", sans-serif;
+  font-size: 16px;
+}
+
+[class*="__container"] {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+.header__title {
+  font-size: 36px;
+  color: #069e9e;
+  text-shadow: 4px 4px 2px #800f00, 5px 10px 10px #16d33f;
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 5px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.footer__text {
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 5px;
+}
+
+/* Ours Popular Products */
+
+.popular {
+  background: #fefaf4;
+  position: relative;
+}
+
+.popular__decor {
+  background: url("../img/flower.webp") no-repeat 100%;
+  width: 171px;
+  height: 385px;
+  transform: rotate(325deg) scaleX(-1);
+  position: absolute;
+  right: -80px;
+  bottom: 0;
+}
+
+.popular__container {
+  padding: 125px 15px 115px 15px;
+}
+
+.popular__title {
+  font-family: "DM Serif Text", serif;
+  font-size: 58px;
+  margin-bottom: 27px;
+}
+
+.popular__description {
+  color: #606060;
+  font-family: "Inter", serif;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.popular__description p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.product__title {
+  font-family: "DM Serif Text", serif;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.list-popular {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -25px;
+  row-gap: 50px;
+}
+
+.product {
+  flex: 0 0 33.333%;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__link-image {
+  overflow: hidden;
+}
+
+.product__link-image img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 357 / 240;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.3s ease;
+}
+
+.product__link-image:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.product__text {
+  font-family: Inter;
+  line-height: 1.6;
+}
+
+.product__text:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.product__text p:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.product__links:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.product__read-more {
+  color: #f55529;
+  font-family: Inter;
+  font-weight: 800;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+
+.product__arrow-link {
+  transition: all 0.3s ease;
+}
+
+.product__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+@media (any-hover: hover) {
+  .product__link-image img:hover {
+    transform: scale(1.1);
+  }
+
+  .product__read-more:hover {
+    text-decoration: underline;
+  }
+
+  .product__arrow-link:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 1450px) {
+  .popular__decor {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .product {
+    flex: 0 0 50%;
+  }
+
+  .popular__container {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product {
+    flex: 0 0 100%;
+  }
+
+  .popular__title {
+    font-size: 38px;
+    margin-bottom: 27px;
+  }
+
+  .popular__container {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+
+/* Most Popular Product */
+.most-popular {
+  background-color: #fff;
+}
+
+.most-popular__container {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.most-popular__title {
+  font-family: "DM Serif Text", serif;
+  font-size: 58px;
+  color: #291403;
+  margin-bottom: 27px;
+  text-align: center;
+}
+
+.most-popular__description {
+  font-family: "Cormorant Infant", serif;
+  color: #818181;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 60px;
+}
+
+.most-popular__description p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.product-most__title,
+.product-most__price {
+  font-family: "Cormorant Infant", serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.most-products {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  row-gap: 30px;
+}
+
+.most-popular__list:not(:last-child) {
+  margin-bottom: 75px;
+}
+
+.product-most {
+  flex: 0 0 25%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-most__link-image {
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.product-most__link-image img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 270 / 270;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.3s ease;
+}
+
+.product-most__link-image:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.most-popular__button {
+  text-align: center;
+}
+
+.most-popular__button a {
+  background: #ff7a49;
+  color: #fff;
+  font-family: Ubuntu;
+  font-weight: 500;
+  line-height: 1.875;
+  padding: 11px 41.5px;
+  border: 1px solid #ff7a49;
+  transition: all 0.3s ease;
+}
+
+@media (any-hover: hover) {
+  .product-most__link-image img:hover {
+    transform: scale(1.1);
+  }
+
+  .product-most__title a:hover {
+    text-decoration: underline;
+  }
+
+  .most-popular__button a:hover {
+    background: #fff;
+    color: #ff7a49;
+  }
+}
+
+@media (max-width: 1200px) {
+  .product-most {
+    flex: 0 0 33.333%;
+  }
+}
+
+@media (max-width: 850px) {
+  .product-most {
+    flex: 0 0 50%;
+  }
+
+  .most-popular__title {
+    font-size: 48px;
+    margin-bottom: 27px;
+  }
+
+  .most-popular__container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-most {
+    flex: 0 0 100%;
+  }
+
+  .most-popular__title {
+    font-size: 38px;
+    margin-bottom: 27px;
+  }
+
+  .most-popular__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* Our Products */
+.most-popular__nav {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 75px;
+  display: flex;
+  gap: 41px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.most-popular--dark {
+  background-color: #0e333d;
+}
+
+.most-popular--dark .most-popular__title,
+.most-popular--dark .most-popular__description,
+.most-popular--dark .product-most__title,
+.most-popular--dark .product-most__price,
+.most-popular--dark .most-popular__nav {
+  color: #fff;
+}
+
+.most-popular--dark .most-popular__description {
+  margin-bottom: 35px;
+}
+
+@media (any-hover: hover) {
+  .most-popular__nav a:hover {
+    text-decoration: underline;
+  }
+}
+
+/* We Provide Solutions To Grow Your Business */
+.solutions {
+  background-color: #37393f;
+}
+
+.solutions__content {
+  flex: 0 0 100%;
+  display: flex;
+}
+
+.solutions__container {
+  max-width: 1250px;
+  display: flex;
+  align-items: center;
+  flex: 0 0 100%;
+}
+
+.solutions__body {
+  padding: 50px 0px 50px 0px;
+}
+
+.solutions__subtitle {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.solutions__subtitle:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.solutions__subtitle::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  flex: 0 0 12px;
+  background-color: #40ddb6;
+}
+
+.solutions__title {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.21;
+}
+
+.solutions__title:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.solutions__text {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.46;
+}
+
+.solutions__text:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+.solutions__text p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.indicators {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.indicators:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+.indicators__subtitle {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+.indicators__title {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.indicators__item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: #2e2f34;
+  padding: 27px 30px;
+  flex: 1 0 250px;
+}
+
+.info-list {
+  display: flex;
+  row-gap: 23px;
+  column-gap: 37px;
+  flex-wrap: wrap;
+}
+
+.info-list__item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex: 1 0 276px;
+}
+
+.info-list__item--no-check::before {
+  display: none;
+}
+
+.info-list__item::before {
+  content: "";
+  flex: 0 0 27px;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: url(../img/check.svg) center/cover no-repeat;
+}
+
+.info-list__number {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.info-list__text {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.info-list__star {
+  color: #ffb342;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.info-list__star img {
+  vertical-align: baseline;
+}
+
+.info-list__link {
+  color: #40ddb6;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.info-list__link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #40ddb6;
+  margin-top: 2px;
+  transition: background-color 0.3s;
+}
+
+.solutions__image img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 868 / 741;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 1000px) {
+  .solutions {
+    display: flex;
+  }
+
+  .solutions__body {
+    padding: 50px 80px 50px 0px;
+  }
+
+  .solutions__image {
+    flex: 0 0
+      calc(100vw - (((100vw - 1250px) / 2) + ((1250px - 30px) * 0.5754) + 15px));
+    transform: translate(-100%, 0px);
+  }
+
+  .solutions__body {
+    width: 57.54%;
+    flex: 0 0 57.54%;
+  }
+}
