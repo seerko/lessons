@@ -1,3 +1,4 @@
+"use strict"
 // Задача №1
 // Отримати в константу елемент <body>
 const body = document.body;
